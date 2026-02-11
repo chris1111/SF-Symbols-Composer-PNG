@@ -35,8 +35,8 @@
               }
             }
           },
-          "image-name" : "globe.fill 2.png",
-          "name" : "globe.fill 2",
+          "image-name" : "globe.fill.png",
+          "name" : "globe.fill",
           "position-specializations" : [
             {
               "idiom" : "square",
