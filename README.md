@@ -1,4 +1,5 @@
 # SF-Symbols-Composer-PNG
 ### Exemple: ⬇︎ Create Icon with ➤ [globe.fill.png](https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Symbols-PNG/G/globe.fill.png) using [Icon Composer](https://developer.apple.com/icon-composer/), view file ➤ [json](https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Exemple/World.icon/icon.json)
+### All symbols are sorted in [alphabetical order](https://github.com/chris1111/SF-Symbols-Composer-PNG/tree/main/Symbols-PNG)
 <img src="Exemple/World.png" alt="Github Project" style="width:40%;">
 
