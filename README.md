@@ -8,4 +8,4 @@
 - ### Exemple: ⬇︎ Create Icon with ➤ [internaldrive.png](https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Symbols-PNG/I/internaldrive.png), view file ➤ [json](https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Exemple/Drive.icon/icon.json)
 <img src="Exemple/Drive.png" alt="Github Project" style="width:40%;">
 
-### All symbols are sorted in [alphabetical order](https://github.com/chris1111/SF-Symbols-Composer-PNG/tree/main/Symbols-PNG)
+

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SF Symbols Composer PNG — 7000+ Symbols</title>
+<meta name="description" content="More than 7000 Symbols in different sizes extracted from SF Symbols, sorted in alphabetical order. Ready for Icon Composer.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#05060c;
+    --glass:rgba(255,255,255,.05);
+    --border:rgba(255,255,255,.09);
+    --text:#e9ebf4;
+    --muted:#98a1b6;
+    --violet:#8b5cf6;
+    --blue:#3b82f6;
+    --cyan:#22d3ee;
+    --grad:linear-gradient(120deg,#a78bfa,#60a5fa 45%,#22d3ee);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    background:var(--bg);color:var(--text);
+    overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:rgba(139,92,246,.45)}
+
+  /* ── Ambient background ─────────────────────────── */
+  body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+    background:radial-gradient(60% 50% at 50% 0%,rgba(124,58,237,.20),transparent 70%)}
+  .orb{position:fixed;border-radius:50%;filter:blur(110px);z-index:-2;pointer-events:none;
+    animation:drift 24s ease-in-out infinite alternate}
+  .orb-a{width:46vw;height:46vw;top:-12%;left:-10%;background:#6d28d9;opacity:.42}
+  .orb-b{width:40vw;height:40vw;top:22%;right:-14%;background:#1d4ed8;opacity:.38;animation-duration:30s;animation-delay:-8s}
+  .orb-c{width:36vw;height:36vw;bottom:-18%;left:26%;background:#0e7490;opacity:.32;animation-duration:34s;animation-delay:-16s}
+  @keyframes drift{
+    0%{transform:translate(0,0) scale(1)}
+    50%{transform:translate(4vw,-4vh) scale(1.08)}
+    100%{transform:translate(-3vw,4vh) scale(.94)}
+  }
+  .grid-overlay{position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);
+    background-size:30px 30px;
+    -webkit-mask-image:radial-gradient(70% 60% at 50% 20%,#000 30%,transparent 100%);
+            mask-image:radial-gradient(70% 60% at 50% 20%,#000 30%,transparent 100%)}
+
+  /* ── Nav ────────────────────────────────────────── */
+  .nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+    padding:14px clamp(18px,4vw,36px);
+    background:rgba(7,8,14,.6);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.06)}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);
+    font-weight:800;font-size:1rem;letter-spacing:-.02em}
+  .brand em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .brand-dot{width:11px;height:11px;border-radius:50%;
+    background:linear-gradient(135deg,var(--violet),var(--cyan));
+    box-shadow:0 0 12px rgba(139,92,246,.9)}
+  .nav-links{display:flex;align-items:center;gap:clamp(12px,2.5vw,26px)}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:.88rem;font-weight:600;transition:color .25s}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{padding:8px 18px;border-radius:999px;color:#fff !important;font-size:.85rem !important;
+    background:linear-gradient(135deg,rgba(139,92,246,.35),rgba(34,211,238,.25));
+    border:1px solid rgba(139,92,246,.45);transition:box-shadow .25s,transform .25s !important}
+  .nav-cta:hover{box-shadow:0 0 20px rgba(139,92,246,.45);transform:translateY(-1px)}
+  @media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* ── Hero ───────────────────────────────────────── */
+  .hero{max-width:900px;margin:0 auto;text-align:center;padding:clamp(60px,10vw,110px) 24px 30px}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  .hero>*{animation:fadeUp .8s cubic-bezier(.2,.8,.2,1) both}
+  .hero>*:nth-child(1){animation-delay:.05s}.hero>*:nth-child(2){animation-delay:.15s}
+  .hero>*:nth-child(3){animation-delay:.25s}.hero>*:nth-child(4){animation-delay:.35s}
+  .hero>*:nth-child(5){animation-delay:.45s}.hero>*:nth-child(6){animation-delay:.55s}
+
+  .badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+  .badges img{height:22px;border-radius:4px;opacity:.9;transition:opacity .2s}
+  .badges a:hover img{opacity:1}
+
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:999px;
+    border:1px solid rgba(139,92,246,.35);background:rgba(139,92,246,.08);
+    font-size:.7rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#c4b5fd}
+  .hero h1{margin-top:26px;font-size:clamp(2.4rem,7vw,4.6rem);font-weight:900;letter-spacing:-.035em;line-height:1.05}
+  .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .sub{margin:20px auto 0;max-width:640px;color:var(--muted);font-size:clamp(1rem,2vw,1.18rem);line-height:1.65}
+  .hero .sub b{color:var(--text)}
+
+  .cta-row{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:38px}
+  .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:9px;
+    padding:15px 28px;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;
+    transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,background .3s}
+  .btn::after{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.4),transparent);
+    transform:skewX(-20deg);transition:left .6s ease}
+  .btn:hover::after{left:130%}
+  .btn-primary{color:#fff;background:linear-gradient(135deg,#8b5cf6,#3b82f6 55%,#22d3ee);
+    box-shadow:0 10px 34px rgba(99,102,241,.4)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 44px rgba(99,102,241,.55)}
+  .btn-glass{color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+  .btn-glass:hover{transform:translateY(-3px);background:rgba(255,255,255,.11)}
+  .btn-ghost{color:var(--muted);border:1px solid rgba(255,255,255,.12)}
+  .btn-ghost:hover{transform:translateY(-3px);color:#fff;border-color:rgba(255,255,255,.3)}
+
+  .chips{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:34px}
+  .chip{padding:9px 18px;border-radius:999px;font-size:.82rem;font-weight:600;color:var(--muted);
+    background:var(--glass);border:1px solid var(--border);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+  .chip b{color:#c4b5fd;font-variant-numeric:tabular-nums}
+
+  /* ── Sections ───────────────────────────────────── */
+  .section{max-width:1100px;margin:0 auto;padding:clamp(40px,7vw,72px) 24px 0}
+  .eyebrow-sm{font-size:.7rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#a78bfa}
+  .sec-head h2{margin-top:10px;font-size:clamp(1.6rem,3.5vw,2.3rem);font-weight:800;letter-spacing:-.025em}
+  .sec-head{margin-bottom:28px}
+
+  .glass-card{background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+    border:1px solid var(--border);border-radius:24px;
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    box-shadow:0 24px 60px rgba(0,0,0,.35)}
+
+  /* ── Examples ───────────────────────────────────── */
+  .ex-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.ex-grid{grid-template-columns:1fr}}
+  .ex{padding:26px;display:flex;flex-direction:column;gap:14px}
+  .ex h3{font-size:1.05rem;font-weight:800;letter-spacing:-.01em}
+  .ex .shot{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);
+    background:radial-gradient(circle at 50% 30%,rgba(255,255,255,.07),rgba(255,255,255,.015))}
+  .ex .shot img{display:block;width:100%;height:auto}
+  .ex p{color:var(--muted);font-size:.88rem;line-height:1.6}
+  .ex-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+  .ex-links a{padding:7px 14px;border-radius:999px;font-size:.78rem;font-weight:700;
+    text-decoration:none;color:#7dd3fc;background:rgba(56,189,248,.08);
+    border:1px solid rgba(56,189,248,.3);transition:background .25s,color .25s}
+  .ex-links a:hover{background:rgba(56,189,248,.18);color:#bae6fd}
+  .ex-links a.violet{color:#c4b5fd;background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.35)}
+  .ex-links a.violet:hover{background:rgba(139,92,246,.22);color:#ddd6fe}
+
+  /* ── Icon grid (glyphs) ─────────────────────────── */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+  .icon-card{position:relative;overflow:hidden;border-radius:20px;padding:14px;
+    background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .35s}
+  .icon-card::before{content:"";position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .35s;
+    background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),rgba(139,92,246,.16),transparent 65%)}
+  .icon-card:hover{transform:translateY(-6px);border-color:rgba(139,92,246,.5);
+    box-shadow:0 20px 44px rgba(0,0,0,.5),0 12px 40px rgba(99,102,241,.18)}
+  .icon-card:hover::before{opacity:1}
+  .thumb{position:relative;aspect-ratio:1;display:grid;place-items:center;overflow:hidden;border-radius:14px;
+    background:radial-gradient(circle at 50% 32%,rgba(255,255,255,.09),rgba(255,255,255,.015))}
+  .thumb img{position:relative;z-index:1;width:70%;height:70%;object-fit:contain;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+  /* SF Symbol glyphs are black → invert to glow white on dark 🤍 */
+  .thumb img.glyph{filter:invert(1) drop-shadow(0 0 14px rgba(167,139,250,.35))}
+  .icon-card:hover .thumb img{transform:scale(1.1) translateY(-2px)}
+  .icon-card.copyable{cursor:pointer}
+  .icon-card figcaption{margin-top:12px;text-align:center;font-size:.8rem;font-weight:600;
+    color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;transition:color .25s}
+  .icon-card:hover figcaption{color:#c4b5fd}
+  .copy-hint{position:absolute;z-index:2;top:8px;right:10px;font-size:.65rem;font-weight:700;
+    color:#94a3b8;opacity:0;transition:opacity .25s}
+  .icon-card:hover .copy-hint{opacity:1}
+
+  .alpha-note{text-align:center;color:var(--muted);font-size:.92rem;margin-top:24px;line-height:1.8}
+  .alpha-note a{color:#7dd3fc;text-decoration:none;font-weight:700}
+  .alpha-note a:hover{color:#bae6fd}
+
+  /* ── GitHub CTA ─────────────────────────────────── */
+  .download{text-align:center;padding:clamp(40px,6vw,64px) 28px;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .download h2{font-size:clamp(1.5rem,3.2vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  .download p{color:var(--muted);max-width:520px;line-height:1.7;font-size:.96rem}
+  .download .btn{margin-top:10px}
+
+  /* ── Modal 🪟 ───────────────────────────────────── */
+  .modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}
+  .modal.open{display:flex}
+  .modal-backdrop{position:absolute;inset:0;background:rgba(3,4,10,.72);
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    animation:fadeIn .3s ease both}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  .modal-panel{position:relative;width:min(1200px,100%);max-height:88vh;display:flex;flex-direction:column;
+    border-radius:26px;border:1px solid rgba(255,255,255,.12);
+    background:linear-gradient(160deg,rgba(20,22,34,.94),rgba(10,12,20,.94));
+    box-shadow:0 40px 120px rgba(0,0,0,.6);overflow:hidden;
+    animation:pop .45s cubic-bezier(.2,.9,.25,1.05) both}
+  @keyframes pop{from{opacity:0;transform:translateY(26px) scale(.97)}to{opacity:1;transform:none}}
+  .modal-top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    padding:22px 26px 16px;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+  .modal-top h2{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin-top:6px}
+  .modal-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .search{padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);
+    background:rgba(255,255,255,.06);color:var(--text);font-family:inherit;font-size:.9rem;outline:none;
+    min-width:220px;transition:border-color .25s,box-shadow .25s}
+  .search::placeholder{color:var(--muted)}
+  .search:focus{border-color:rgba(139,92,246,.6);box-shadow:0 0 0 3px rgba(139,92,246,.18)}
+  .close-btn{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.06);color:var(--text);font-size:1rem;cursor:pointer;
+    transition:background .25s,transform .25s,border-color .25s}
+  .close-btn:hover{background:rgba(255,80,80,.2);border-color:rgba(255,90,90,.5);transform:rotate(90deg)}
+  .count-pill{display:inline-block;vertical-align:middle;margin-left:10px;padding:4px 13px;border-radius:999px;
+    font-size:.72rem;font-weight:700;letter-spacing:.05em;color:#c4b5fd;
+    background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4)}
+
+  /* A–Z quick jump */
+  .letter-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 26px;
+    border-bottom:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.02);
+    scrollbar-width:none}
+  .letter-nav::-webkit-scrollbar{display:none}
+  .letter-btn{flex:0 0 auto;min-width:34px;padding:7px 10px;border-radius:10px;border:1px solid transparent;
+    background:transparent;color:var(--muted);font-family:inherit;font-weight:800;font-size:.8rem;cursor:pointer;
+    transition:background .2s,color .2s,border-color .2s}
+  .letter-btn:hover{color:#fff;background:rgba(139,92,246,.18)}
+  .letter-btn:disabled{opacity:.28;cursor:default}
+  .letter-btn:not(:disabled):hover{border-color:rgba(139,92,246,.4)}
+
+  .modal-body{overflow-y:auto;padding:22px 26px 34px;scrollbar-width:thin;scrollbar-color:rgba(139,92,246,.5) transparent}
+  .modal-body::-webkit-scrollbar{width:9px}
+  .modal-body::-webkit-scrollbar-thumb{background:rgba(139,92,246,.35);border-radius:99px}
+  .modal-hint{color:var(--muted);font-size:.78rem;margin-bottom:18px}
+  .modal-hint kbd{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#c4b5fd;
+    background:rgba(139,92,246,.13);border:1px solid rgba(139,92,246,.3);padding:1px 7px;border-radius:6px}
+  .result-note{color:var(--muted);font-size:.85rem;margin-bottom:14px}
+  .result-note b{color:#c4b5fd}
+
+  /* ── Letter accordions 📖 (all closed by default) ── */
+  .letter-sec{position:relative;margin-bottom:12px;border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.018));
+    overflow:hidden;transition:border-color .3s,box-shadow .3s}
+  .letter-sec.open{border-color:rgba(139,92,246,.5);
+    box-shadow:0 14px 36px rgba(99,102,241,.16)}
+  .letter-head{display:flex;align-items:center;gap:14px;padding:13px 64px 13px 14px;cursor:pointer;
+    user-select:none;-webkit-user-select:none;transition:background .25s}
+  .letter-head:hover{background:rgba(139,92,246,.08)}
+  .letter-badge{flex:0 0 auto;width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
+    font-weight:900;font-size:1.1rem;color:#fff;
+    background:linear-gradient(135deg,rgba(139,92,246,.55),rgba(34,211,238,.35));
+    border:1px solid rgba(139,92,246,.55);box-shadow:0 6px 18px rgba(99,102,241,.3)}
+  .letter-title{font-weight:800;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase}
+  .letter-meta{margin-left:auto;color:var(--muted);font-size:.78rem;font-weight:700;
+    font-variant-numeric:tabular-nums}
+  .letter-chevron{color:#a78bfa;font-size:.9rem;transition:transform .3s}
+  .letter-sec.open .letter-chevron{display:none}
+  .letter-close{position:absolute;top:50%;right:16px;transform:translateY(-50%);
+    width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.16);
+    background:rgba(255,255,255,.07);color:var(--muted);font-size:.75rem;cursor:pointer;
+    display:none;place-items:center;transition:background .25s,border-color .25s,color .25s}
+  .letter-sec.open .letter-close{display:grid}
+  .letter-close:hover{background:rgba(255,80,80,.22);border-color:rgba(255,90,90,.55);color:#fff}
+  .letter-panel{padding:4px 14px 18px}
+
+  /* ── Back-to-top arrow ⬆️ ───────────────────────── */
+  .to-top{position:absolute;right:24px;bottom:24px;z-index:5;width:50px;height:50px;border-radius:50%;
+    border:1px solid rgba(139,92,246,.55);cursor:pointer;font-size:1.15rem;color:#fff;font-family:inherit;
+    background:linear-gradient(135deg,rgba(139,92,246,.8),rgba(59,130,246,.8));
+    box-shadow:0 12px 32px rgba(99,102,241,.5);
+    opacity:0;pointer-events:none;transform:translateY(14px) scale(.85);
+    transition:opacity .3s,transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+  .to-top.show{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
+  .to-top:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(99,102,241,.65)}
+
+  .loader{display:flex;align-items:center;justify-content:center;gap:14px;padding:90px 0;color:var(--muted);font-weight:600}
+  .spinner{width:26px;height:26px;border-radius:50%;
+    border:3px solid rgba(255,255,255,.14);border-top-color:#a78bfa;animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .error-box{text-align:center;padding:70px 20px;color:var(--muted)}
+  .error-box p{font-size:1rem;margin-bottom:20px;line-height:1.7}
+  @media(max-width:640px){
+    .search{min-width:0;flex:1}
+    .modal-body .grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+    .modal-top{padding:18px}
+    .letter-nav{padding:10px 18px}
+    .to-top{right:16px;bottom:16px}
+  }
+
+  /* ── Toast 📋 ───────────────────────────────────── */
+  .toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);
+    z-index:200;padding:13px 24px;border-radius:999px;font-size:.88rem;font-weight:700;color:#fff;
+    background:linear-gradient(135deg,rgba(139,92,246,.85),rgba(59,130,246,.85));
+    border:1px solid rgba(255,255,255,.25);box-shadow:0 16px 40px rgba(99,102,241,.45);
+    opacity:0;pointer-events:none;transition:opacity .3s,transform .3s cubic-bezier(.2,.8,.2,1);
+    max-width:88vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* ── Footer ─────────────────────────────────────── */
+  footer{margin-top:clamp(60px,9vw,100px);padding:36px 24px 44px;text-align:center;
+    border-top:1px solid rgba(255,255,255,.06)}
+  footer p{color:var(--muted);font-size:.92rem;line-height:1.9}
+  footer a{color:var(--text);text-decoration:none;font-weight:700;border-bottom:1px solid rgba(255,255,255,.25);transition:border-color .25s,color .25s}
+  footer a:hover{color:#a78bfa;border-color:#a78bfa}
+  .foot-note{margin-top:6px;font-size:.8rem;opacity:.75}
+
+  /* ── Reveal on scroll ───────────────────────────── */
+  .reveal{opacity:0}
+  .reveal.in{animation:fadeUp .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d,0ms)}
+  .reveal.done{opacity:1}
+
+  /* ── Right-click to save hint 🖱️ ─────────────────── */
+  .thumb::after{
+    content:"🖱️ Right-click to save image";
+    position:absolute;z-index:3;left:50%;bottom:10px;
+    transform:translateX(-50%) translateY(8px);
+    padding:5px 12px;border-radius:999px;
+    font-size:.62rem;font-weight:700;white-space:nowrap;
+    color:#e9ebf4;background:rgba(10,12,20,.78);
+    border:1px solid rgba(139,92,246,.45);
+    box-shadow:0 8px 20px rgba(0,0,0,.45);
+    opacity:0;pointer-events:none;
+    transition:opacity .25s,transform .25s cubic-bezier(.2,.8,.2,1);
+  }
+  .icon-card:hover .thumb::after{opacity:1;transform:translateX(-50%) translateY(0)}
+  .icon-card.missing .thumb::after{display:none}
+  /* Same hint on the big example shots */
+  .ex .shot:hover::after{
+    content:"🖱️ Right-click to save";
+    position:absolute;left:50%;bottom:12px;transform:translateX(-50%);
+    padding:6px 14px;border-radius:999px;font-size:.68rem;font-weight:700;color:#e9ebf4;
+    background:rgba(10,12,20,.78);border:1px solid rgba(139,92,246,.45);white-space:nowrap;
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none !important;transition:none !important}
+    .reveal{opacity:1}
+  }
+</style>
+</head>
+<body>
+
+<!-- Ambient background -->
+<div class="orb orb-a"></div>
+<div class="orb orb-b"></div>
+<div class="orb orb-c"></div>
+<div class="grid-overlay"></div>
+
+<!-- Nav -->
+<nav class="nav">
+  <a class="brand" href="#top"><span class="brand-dot"></span>SF&nbsp;<em>Symbols</em></a>
+  <div class="nav-links">
+    <a href="#examples">Examples</a>
+    <a href="#featured">Preview</a>
+    <a href="#" data-open-symbols>All Symbols</a>
+    <a class="nav-cta" href="https://github.com/chris1111/SF-Symbols-Composer-PNG" target="_blank" rel="noopener">⭐ GitHub</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="badges">
+      <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/License-MIT-violet.svg" alt="License: MIT">
+      </a>
+    </div>
+
+    <span class="eyebrow">✦ Extracted from SF Symbols · Alphabetical Order ✦</span>
+
+    <h1>SF Symbols <span class="grad">Composer PNG</span></h1>
+
+    <p class="sub">More than <b>7000 Symbols</b> in different sizes extracted from
+      <b>SF Symbols</b> — sorted in <b>alphabetical order</b> and ready for
+      <b>Icon Composer</b>. 🧩</p>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#" data-open-symbols>✨ View All <span id="ctaCount">7000+</span> Symbols</a>
+      <a class="btn btn-glass" href="https://developer.apple.com/icon-composer/" target="_blank" rel="noopener">🧩 Get Icon Composer</a>
+      <a class="btn btn-ghost" href="https://github.com/chris1111/SF-Symbols-Composer-PNG" target="_blank" rel="noopener">📁 GitHub Repo</a>
+    </div>
+
+    <div class="chips">
+      <span class="chip">⚡ <b id="statTotal">7000+</b> symbols</span>
+      <span class="chip">🔤 A → Z sorted</span>
+      <span class="chip">🖼️ PNG format</span>
+      <span class="chip">🍏 Icon Composer ready</span>
+    </div>
+  </header>
+
+  <!-- Examples -->
+  <section class="section" id="examples">
+    <div class="sec-head reveal">
+      <span class="eyebrow-sm">Examples</span>
+      <h2>From symbol ➜ to icon 🎨</h2>
+    </div>
+    <div class="ex-grid">
+      <div class="glass-card ex reveal">
+        <div class="shot"><img src="Exemple/World.png" alt="World icon created with Icon Composer" loading="lazy"></div>
+        <h3>🌐 globe.fill</h3>
+        <p>Create an icon with <b>globe.fill.png</b> using Icon Composer — here's the result, with its editable <b>.icon</b> project file.</p>
+        <div class="ex-links">
+          <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Symbols-PNG/G/globe.fill.png" target="_blank" rel="noopener">⬇︎ globe.fill.png</a>
+          <a class="violet" href="https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Exemple/World.icon/icon.json" target="_blank" rel="noopener">{ } view json</a>
+          <a class="violet" href="https://developer.apple.com/icon-composer/" target="_blank" rel="noopener">🧩 Icon Composer</a>
+        </div>
+      </div>
+      <div class="glass-card ex reveal" style="--d:120ms">
+        <div class="shot"><img src="Exemple/Drive.png" alt="Drive icon created with Icon Composer" loading="lazy"></div>
+        <h3>💽 internaldrive</h3>
+        <p>Create an icon with <b>internaldrive.png</b> using Icon Composer — here's the result, with its editable <b>.icon</b> project file.</p>
+        <div class="ex-links">
+          <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Symbols-PNG/I/internaldrive.png" target="_blank" rel="noopener">⬇︎ internaldrive.png</a>
+          <a class="violet" href="https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/Exemple/Drive.icon/icon.json" target="_blank" rel="noopener">{ } view json</a>
+          <a class="violet" href="https://developer.apple.com/icon-composer/" target="_blank" rel="noopener">🧩 Icon Composer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured preview -->
+  <section class="section" id="featured">
+    <div class="sec-head reveal">
+      <span class="eyebrow-sm">Preview</span>
+      <h2>A taste of the set 🍭</h2>
+    </div>
+    <div class="grid" id="grid-featured"></div>
+    <p class="alpha-note reveal">
+      All symbols are sorted in <b>alphabetical order</b> —
+      <a href="#" data-open-symbols>open the full explorer ✨</a> or
+      <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG/tree/main/Symbols-PNG" target="_blank" rel="noopener">browse on GitHub →</a>
+    </p>
+  </section>
+
+  <!-- GitHub CTA -->
+  <section class="section">
+    <div class="glass-card download reveal">
+      <span class="eyebrow-sm">Repository</span>
+      <h2>7000+ symbols. One repo. 📦</h2>
+      <p>Every symbol, every size, alphabetically organized in <code style="font-family:'JetBrains Mono',monospace;font-size:.85em;color:#c4b5fd;background:rgba(139,92,246,.13);border:1px solid rgba(139,92,246,.28);padding:2px 8px;border-radius:8px">Symbols-PNG/A…Z</code> folders.</p>
+      <a class="btn btn-primary" href="https://github.com/chris1111/SF-Symbols-Composer-PNG" target="_blank" rel="noopener">⭐ Star &amp; Browse on GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>
+    <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG">SF-Symbols-Composer-PNG</a>
+    by <a href="https://github.com/chris1111">chris1111</a> — licensed under
+    <a href="https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/LICENSE">MIT</a>
+  </p>
+  <p class="foot-note">🏔️ The Tahoe Trilogy · IconSet 💽 Disk ✨ Symbols — Built with 💜 Liquid Glass</p>
+</footer>
+
+<!-- ═══ All Symbols modal 🪟 ═══ -->
+<div class="modal" id="symModal" role="dialog" aria-modal="true" aria-label="All SF Symbols">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <div class="modal-top">
+      <div>
+        <span class="eyebrow-sm">Explorer</span>
+        <h2>All SF Symbols <span class="count-pill" id="symCount" hidden></span></h2>
+      </div>
+      <div class="modal-tools">
+        <input class="search" id="symSearch" type="search" placeholder="🔎 Search 7000+ symbols…" autocomplete="off">
+        <button class="close-btn" data-close aria-label="Close">✕</button>
+      </div>
+    </div>
+    <div class="letter-nav" id="letterNav" hidden></div>
+    <div class="modal-body" id="symBody">
+      <div class="loader" id="symLoader"><span class="spinner"></span>Fetching symbol index…</div>
+    </div>
+    <button class="to-top" id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+  /* ── Config ────────────────────────────────────── */
+  const REPO = "chris1111/SF-Symbols-Composer-PNG";
+  const RAW  = "https://raw.githubusercontent.com/" + REPO + "/main/";
+  const TREE_API = "https://api.github.com/repos/" + REPO + "/git/trees/main?recursive=1";
+  const SEARCH_CAP = 1200;
+
+  const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+
+  /* ── Card factory ──────────────────────────────── */
+  function buildCard(src, name, i, opts = {}){
+    const fig = document.createElement("figure");
+    fig.className = "icon-card" + (opts.reveal ? " reveal" : "") + (opts.copy ? " copyable" : "");
+    fig.style.setProperty("--d", (i % 6) * 60 + "ms");
+    fig.dataset.name = name.toLowerCase();
+    if (opts.copy) fig.title = "Click to copy name";
+    fig.innerHTML = `
+      <div class="thumb">
+        <img class="${opts.glyph ? "glyph" : ""}" src="${esc(src)}" alt="${esc(name)} symbol" loading="lazy">
+        ${opts.copy ? `<span class="copy-hint">📋 copy</span>` : ""}
+      </div>
+      <figcaption>${esc(name)}</figcaption>`;
+    if (opts.copy){
+      fig.addEventListener("click", () => copyText(name));
+    }
+    return fig;
+  }
+
+  /* ── Featured preview (homepage) ───────────────── */
+  const featured = [
+    ["Symbols-PNG/G/globe.fill.png","globe.fill"],
+    ["Symbols-PNG/I/internaldrive.png","internaldrive"],
+    ["Symbols-PNG/S/star.fill.png","star.fill"],
+    ["Symbols-PNG/H/heart.fill.png","heart.fill"],
+    ["Symbols-PNG/G/gearshape.fill.png","gearshape.fill"],
+    ["Symbols-PNG/A/apple.terminal.png","terminal"],
+    ["Symbols-PNG/F/folder.fill.png","folder.fill"],
+    ["Symbols-PNG/M/music.note.png","music.note"]
+  ];
+  const gridFeatured = document.getElementById("grid-featured");
+  featured.forEach((it, i) => gridFeatured.appendChild(buildCard(it[0], it[1], i, { glyph:true, reveal:true })));
+
+  /* ── Pointer glow (delegated) ──────────────────── */
+  document.addEventListener("pointermove", e => {
+    const card = e.target.closest(".icon-card");
+    if (!card) return;
+    const r = card.getBoundingClientRect();
+    card.style.setProperty("--mx", (e.clientX - r.left) + "px");
+    card.style.setProperty("--my", (e.clientY - r.top) + "px");
+  });
+
+  /* ── Reveal on scroll ──────────────────────────── */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting){
+        en.target.classList.add("in");
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: .12 });
+  document.querySelectorAll(".reveal").forEach(el => {
+    io.observe(el);
+    el.addEventListener("animationend", () => {
+      el.classList.add("done"); el.classList.remove("in");
+    }, { once: true });
+  });
+
+  /* ── Toast + clipboard 📋 ──────────────────────── */
+  const toast = document.getElementById("toast");
+  let toastTimer;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 1700);
+  }
+  function copyText(text){
+    const done = () => showToast("📋 Copied  " + text);
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+    } else fallbackCopy(text, done);
+  }
+  function fallbackCopy(text, done){
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.cssText = "position:fixed;opacity:0";
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand("copy"); done(); }catch(e){}
+    ta.remove();
+  }
+
+  /* ══════════════════════════════════════════════════
+     🔌 SYMBOL INDEX — one GitHub API call, cached
+     ══════════════════════════════════════════════════ */
+  let indexPromise = null;
+
+  function loadIndex(){
+    if (indexPromise) return indexPromise;
+    indexPromise = (async () => {
+      const res = await fetch(TREE_API);
+      if (!res.ok) throw new Error("API " + res.status);
+      const data = await res.json();
+      const collator = new Intl.Collator(undefined, { numeric:true, sensitivity:"base" });
+      const symbols = (data.tree || [])
+        .filter(n => n.type === "blob" && /^Symbols-PNG\/[^/]+\/.+\.png$/i.test(n.path))
+        .map(n => {
+          const parts = n.path.split("/");
+          return {
+            name: decodeURIComponent(parts[parts.length - 1].replace(/\.png$/i, "")),
+            letter: (parts[1] || "#").toUpperCase(),
+            url: RAW + n.path.split("/").map(encodeURIComponent).join("/")
+          };
+        })
+        .sort((a, b) => collator.compare(a.name, b.name));
+      return symbols;
+    })();
+    return indexPromise;
+  }
+
+  /* ── Live stats in hero ────────────────────────── */
+  function countUp(el, target){
+    const dur = 1300, t0 = performance.now();
+    (function tick(t){
+      const p = Math.min((t - t0) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString() + "+";
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+  }
+  loadIndex().then(symbols => {
+    countUp(document.getElementById("statTotal"), symbols.length);
+    countUp(document.getElementById("ctaCount"), symbols.length);
+  }).catch(() => { /* keep "7000+" fallback */ });
+
+  /* ══════════════════════════════════════════════════
+     🪟 SYMBOL EXPLORER MODAL — accordion letters
+     ══════════════════════════════════════════════════ */
+  const modal      = document.getElementById("symModal");
+  const symBody    = document.getElementById("symBody");
+  const symCount   = document.getElementById("symCount");
+  const symSearch  = document.getElementById("symSearch");
+  const letterNav  = document.getElementById("letterNav");
+  const toTop      = document.getElementById("toTop");
+  let allSymbols = null;
+  let opened = false;
+
+  /* ── Letter accordion open / close ─────────────── */
+  function renderLetterGrid(sec){
+    const panel = sec.querySelector(".letter-panel");
+    if (panel.dataset.done) return;
+    const grid = panel.querySelector(".grid");
+    sec.dataset.items.split("|").forEach((s, i) => {
+      const [name, url] = s.split("\u0001");
+      grid.appendChild(buildCard(url, name, i, { glyph:true, copy:true }));
+    });
+    panel.dataset.done = "1";
+  }
+  function openLetter(sec){
+    const cur = symBody.querySelector(".letter-sec.open");
+    if (cur && cur !== sec) closeLetter(cur);      /* only one open at a time */
+    if (sec.classList.contains("open")) return;
+    renderLetterGrid(sec);
+    sec.classList.add("open");
+    sec.querySelector(".letter-head").setAttribute("aria-expanded","true");
+    sec.querySelector(".letter-panel").hidden = false;
+  }
+  function closeLetter(sec){
+    sec.classList.remove("open");
+    sec.querySelector(".letter-head").setAttribute("aria-expanded","false");
+    sec.querySelector(".letter-panel").hidden = true;
+  }
+
+  /* ── Build the accordion list (all closed) ─────── */
+  function renderExplorer(symbols){
+    const byLetter = new Map();
+    symbols.forEach(s => {
+      if (!byLetter.has(s.letter)) byLetter.set(s.letter, []);
+      byLetter.get(s.letter).push(s);
+    });
+
+    symBody.innerHTML = `
+      <p class="modal-hint">💡 Click a letter to open it · <b>✕</b> closes that letter · <kbd>/</kbd> to search · <kbd>ESC</kbd> closes letter first, then the window</p>
+      <div id="letterWrap"></div>
+      <div id="searchWrap" hidden></div>`;
+
+    const wrap = symBody.querySelector("#letterWrap");
+    const frag = document.createDocumentFragment();
+
+    [...byLetter.keys()].sort().forEach(letter => {
+      const sec = document.createElement("section");
+      sec.className = "letter-sec";
+      sec.dataset.letter = letter;
+      sec.dataset.items = byLetter.get(letter).map(s => s.name + "\u0001" + s.url).join("|");
+      sec.innerHTML = `
+        <div class="letter-head" role="button" tabindex="0" aria-expanded="false">
+          <span class="letter-badge">${esc(letter)}</span>
+          <span class="letter-title">Letter ${esc(letter)}</span>
+          <span class="letter-meta">${byLetter.get(letter).length} symbols</span>
+          <span class="letter-chevron">▾</span>
+        </div>
+        <button class="letter-close" aria-label="Close letter ${esc(letter)}">✕</button>
+        <div class="letter-panel" hidden><div class="grid"></div></div>`;
+
+      const head = sec.querySelector(".letter-head");
+      head.addEventListener("click", () =>
+        sec.classList.contains("open") ? closeLetter(sec) : openLetter(sec));
+      head.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " "){ e.preventDefault();
+          sec.classList.contains("open") ? closeLetter(sec) : openLetter(sec); }
+      });
+      sec.querySelector(".letter-close").addEventListener("click", e => {
+        e.stopPropagation();
+        closeLetter(sec);
+      });
+
+      frag.appendChild(sec);
+    });
+    wrap.appendChild(frag);
+
+    /* A–Z quick jump — opens the letter then scrolls to it */
+    letterNav.hidden = false;
+    letterNav.innerHTML = "";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(L => {
+      const b = document.createElement("button");
+      b.className = "letter-btn";
+      b.textContent = L;
+      if (!byLetter.has(L)){ b.disabled = true; }
+      else b.addEventListener("click", () => {
+        if (symSearch.value){ symSearch.value = ""; applySearch(); }
+        const target = symBody.querySelector(`.letter-sec[data-letter="${L}"]`);
+        if (target){
+          openLetter(target);
+          setTimeout(() => target.scrollIntoView({ block:"start", behavior:"smooth" }), 60);
+        }
+      });
+      letterNav.appendChild(b);
+    });
+
+    symCount.hidden = false;
+    symCount.textContent = `${symbols.length.toLocaleString()} symbols`;
+  }
+
+  function explorerError(){
+    symBody.innerHTML = `
+      <div class="error-box">
+        <p>😅 Couldn't fetch the symbol index.<br>The GitHub API may be rate-limited right now (it resets hourly) —<br>or check your connection and try again.</p>
+        <a class="btn btn-glass" target="_blank" rel="noopener"
+           href="https://github.com/${REPO}/tree/main/Symbols-PNG">Browse Symbols-PNG on GitHub →</a>
+      </div>`;
+  }
+
+  /* ── Search across all symbols ─────────────────── */
+  let searchTimer;
+  symSearch.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(applySearch, 120);
+  });
+
+  function applySearch(){
+    if (!allSymbols) return;
+    const q = symSearch.value.trim().toLowerCase();
+    const wrap   = symBody.querySelector("#letterWrap");
+    const sWrap  = symBody.querySelector("#searchWrap");
+    if (!wrap || !sWrap) return;
+
+    if (!q){
+      sWrap.hidden = true; sWrap.innerHTML = "";
+      wrap.hidden = false;
+      symCount.textContent = `${allSymbols.length.toLocaleString()} symbols`;
+      return;
+    }
+
+    const matches = allSymbols.filter(s => s.name.toLowerCase().includes(q));
+    wrap.hidden = true;
+    sWrap.hidden = false;
+
+    sWrap.innerHTML = `<p class="result-note">${matches.length > SEARCH_CAP
+      ? `Showing first <b>${SEARCH_CAP.toLocaleString()}</b> of <b>${matches.length.toLocaleString()}</b> matches — refine your search 🔎`
+      : `<b>${matches.length.toLocaleString()}</b> match${matches.length === 1 ? "" : "es"}`}</p><div class="grid"></div>`;
+    const grid = sWrap.querySelector(".grid");
+    matches.slice(0, SEARCH_CAP).forEach((s, i) => grid.appendChild(buildCard(s.url, s.name, i, { glyph:true, copy:true })));
+    symCount.textContent = `${matches.length.toLocaleString()} found`;
+  }
+
+  /* ── Back-to-top arrow ⬆️ ──────────────────────── */
+  symBody.addEventListener("scroll", () => {
+    toTop.classList.toggle("show", symBody.scrollTop > 260);
+  });
+  toTop.addEventListener("click", () =>
+    symBody.scrollTo({ top:0, behavior:"smooth" }));
+
+  /* ⌨️ Keyboard: "/" focus search · ESC: search → letter → close all */
+  document.addEventListener("keydown", e => {
+    if (!modal.classList.contains("open")) return;
+
+    if (e.key === "/"){
+      if (document.activeElement !== symSearch){
+        e.preventDefault();
+        symSearch.focus();
+      }
+      return;
+    }
+
+    if (e.key === "Escape"){
+      /* Step 1 — search has text? close only the search */
+      if (symSearch.value.trim() !== ""){
+        e.preventDefault();
+        symSearch.value = "";
+        applySearch();
+        showToast("🔎 Search closed — press ESC again");
+        symSearch.focus();
+        return;
+      }
+      /* Step 2 — a letter is open? close only that letter */
+      const openSec = symBody.querySelector(".letter-sec.open");
+      if (openSec){
+        e.preventDefault();
+        closeLetter(openSec);
+        showToast("📖 Letter closed — press ESC again to close all");
+        return;
+      }
+      /* Step 3 — close the whole explorer */
+      closeModal();
+    }
+  });
+
+  async function openModal(){
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+    if (!opened){
+      opened = true;
+      try{
+        allSymbols = await loadIndex();
+        renderExplorer(allSymbols);
+      }catch(err){ explorerError(); }
+    }
+    setTimeout(() => symSearch.focus(), 100);
+  }
+  function closeModal(){
+    modal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll("[data-open-symbols]").forEach(el =>
+    el.addEventListener("click", e => { e.preventDefault(); openModal(); })
+  );
+  modal.addEventListener("click", e => { if (e.target.closest("[data-close]")) closeModal(); });
+</script>
+</body>
+</html>
