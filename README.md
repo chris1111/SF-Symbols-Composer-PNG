@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/chris1111/SF-Symbols-Composer-PNG/blob/main/LICENSE) [![pages-build-deployment](https://github.com/chris1111/F-Symbols-Composer-PNG/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/chris1111/F-Symbols-Composer-PNG/actions/workflows/pages/pages-build-deployment)
 
 # SF-Symbols-Composer-PNG 
 ### View all Symbols in Page ➡︎ [SF-Symbols-Composer-PNG](https://chris1111.github.io/SF-Symbols-Composer-PNG/)
